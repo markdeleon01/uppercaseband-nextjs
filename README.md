@@ -6,8 +6,6 @@
 
 As a matter of interest and passion for JavaScript and music in general, I created a ReactJS web application for my band UPPERCASE.
 
-This project was bootstrapped with [Vite](https://www.npmjs.com/package/create-vite), and tested with [Vitest](https://vitest.dev/guide/).
-
 The live site can be found on:  
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
