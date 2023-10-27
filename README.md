@@ -4,7 +4,7 @@
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/markdeleon01/uppercaseband-nextjs/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/markdeleon01/uppercaseband-nextjs/tree/main)
 
 
-As a matter of interest and passion for JavaScript and music in general, I created a ReactJS web application for my band UPPERCASE.
+As a matter of interest and passion for JavaScript and music in general, I created a NextJS web application for my band UPPERCASE.
 
 The live site can be found on:  
 

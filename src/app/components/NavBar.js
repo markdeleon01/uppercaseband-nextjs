@@ -44,24 +44,22 @@ export default function NavBar() {
 
 
 	return (
-		<>
-			<div className={styles.nav}>
-				<Link data-testid='home-link' href='/' onClick={highlightLink}>
-					Home
-				</Link>
-				&nbsp;|&nbsp;
-				<Link data-testid='about-link' href='/about' onClick={highlightLink}>
-					About
-				</Link>
-				&nbsp;|&nbsp;
-				<Link data-testid='discography-link' href='/discography' onClick={highlightLink}>
-					Discography
-				</Link>
-				&nbsp;|&nbsp;
-				<Link data-testid='events-link' href='/events' onClick={highlightLink}>
-					Events
-				</Link>
-			</div>
-		</>
+		<div className={styles.nav}>
+			<Link data-testid='home-link' href='/' onClick={highlightLink}>
+				Home
+			</Link>
+			&nbsp;|&nbsp;
+			<Link data-testid='about-link' href='/about' onClick={highlightLink}>
+				About
+			</Link>
+			&nbsp;|&nbsp;
+			<Link data-testid='discography-link' href='/discography' onClick={highlightLink}>
+				Discography
+			</Link>
+			&nbsp;|&nbsp;
+			<Link data-testid='events-link' href='/events' onClick={highlightLink}>
+				Events
+			</Link>
+		</div>
 	)
 }
