@@ -20,14 +20,18 @@ export default function RootLayout({ children }) {
 	return (
 		<html lang='en'>
 			<body className={inter.className}>
-				<main className='main'>
+				<main data-testid='main' className='main'>
 					<NavBar />
-					<h1>U P P E R C A S E</h1>
-					<ErrorBoundary fallback={ <Error /> }>
-						<Suspense fallback={ <Loading /> }>
-							{children}
-						</Suspense>
-					</ErrorBoundary>
+					<div data-testid='page-header' className='pageHeader'>
+						<h1>U P P E R C A S E</h1>
+					</div>
+					<div data-testid='page-section' className='pageSection'>
+						<ErrorBoundary fallback={ <Error /> }>
+							<Suspense fallback={ <Loading /> }>
+								{children}
+							</Suspense>
+						</ErrorBoundary>
+					</div>
 				</main>
 			</body>
 		</html>
