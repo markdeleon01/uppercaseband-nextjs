@@ -122,6 +122,14 @@ a:hover {
   min-height: 100vh;
 }
 
+.page-header {
+
+}
+
+.page-section {
+
+}
+
 @keyframes rotate {
   from {
     transform: rotate(360deg);
