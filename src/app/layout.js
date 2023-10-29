@@ -24,7 +24,7 @@ export default function RootLayout({ children }) {
 					<div data-testid='page-header' className='pageHeader'>
 						<h1>U P P E R C A S E</h1>
 					</div>
-					<div data-testid='page-section' className='pageSection'>
+					<div data-testid='page-content' className='pageContent'>
 						<ErrorBoundary fallback={<Error />}>
 							<Suspense fallback={<Loading />}>{children}</Suspense>
 						</ErrorBoundary>
