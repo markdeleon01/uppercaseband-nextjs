@@ -133,7 +133,7 @@ a:hover {
 	padding-bottom: 10px;
 }
 
-.pageSection {
+.pageContent {
 	padding-left: 140px;
 	padding-right: 140px;
 }
@@ -156,12 +156,6 @@ p {
 	}
 }
 
-@media (min-width: 0px) and (max-width: 314px) {
-	.pageContent {
-		padding-left: 15px;
-		padding-right: 15px;
-	}
-}
 @media (min-width: 315px) and (max-width: 334px) {
 	.pageContent {
 		padding-left: 25px;
@@ -196,11 +190,5 @@ p {
 	.pageContent {
 		padding-left: 70px;
 		padding-right: 70px;
-	}
-}
-@media (min-width: 425px) {
-	.pageContent {
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 }
