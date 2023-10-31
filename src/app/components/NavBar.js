@@ -8,7 +8,6 @@ import { useEffect } from 'react'
 export default function NavBar() {
 
 	const pathname = usePathname()
-	const styleSelected = styles.navLinkSelected
 
 	const resetNavLinksClass = () => {
 		const navLinks = document.querySelectorAll('a')
@@ -27,14 +26,14 @@ export default function NavBar() {
 				hrefValue === pathname || 
 				(pathname === '' && pathname === '/')
 			) {
-				navLink.className = `${ styleSelected }`
+				navLink.className = `${ styles.navLinkSelected }`
 			}
 		})
 	}
 
 	const highlightLink = (event) => {
 		resetNavLinksClass()
-		event.target.className = `${ styleSelected }`
+		event.target.className = `${ styles.navLinkSelected }`
 	}
 
 	// useEffect hook is called after React updates the DOM
