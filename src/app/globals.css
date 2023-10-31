@@ -180,15 +180,33 @@ p {
 		padding-right: 40px;
 	}
 }
-@media (min-width: 360px) and (max-width: 410px) {
+@media (min-width: 360px) and (max-width: 376px) {
 	.pageContent {
-		padding-left: 75px;
-		padding-right: 75px;
+		padding-left: 45px;
+		padding-right: 45px;
+	}
+}
+@media (min-width: 377px) and (max-width: 396px) {
+	.pageContent {
+		padding-left: 55px;
+		padding-right: 55px;
+	}
+}
+@media (min-width: 397px) and (max-width: 410px) {
+	.pageContent {
+		padding-left: 65px;
+		padding-right: 65px;
 	}
 }
 @media (min-width: 411px) and (max-width: 424px) {
 	.pageContent {
 		padding-left: 70px;
 		padding-right: 70px;
+	}
+}
+@media (min-width: 425px) {
+	.pageContent {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
