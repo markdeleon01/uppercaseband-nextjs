@@ -1,4 +1,7 @@
 import styles from './page.module.css'
+
+import { Suspense } from 'react'
+import Loading from './loading'
 import Image from 'next/image'
 
 export default function Home() {
@@ -6,17 +9,19 @@ export default function Home() {
 		<div data-testid='home' className={styles.home}>
 			<h2 data-testid='home-header'>Welcome to the Official Website!</h2>
 			<div data-testid='band-logo' className={styles.bandLogo}>
-				<Image
-					src='/UPPERCASE-logo.png'
-					alt='UPPERCASE-logo.png'
-					sizes='450vw'
-					style={{
-						width: '100%',
-						height: 'auto'
-					}}
-					width={450}
-					height={300}
-				/>
+				<Suspense fallback={<Loading />}>
+					<Image
+						src='/UPPERCASE-logo.png'
+						alt='UPPERCASE-logo.png'
+						sizes='450vw'
+						style={{
+							width: '100%',
+							height: 'auto'
+						}}
+						width={450}
+						height={300}
+					/>
+				</Suspense>
 			</div>
 			<div>
 				<p data-testid='band-description'>
