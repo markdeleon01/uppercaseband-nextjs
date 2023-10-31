@@ -180,13 +180,7 @@ p {
 		padding-right: 40px;
 	}
 }
-@media (min-width: 360px) and (max-width: 376px) {
-	.pageContent {
-		padding-left: 45px;
-		padding-right: 45px;
-	}
-}
-@media (min-width: 377px) and (max-width: 396px) {
+@media (min-width: 360px) and (max-width: 396px) {
 	.pageContent {
 		padding-left: 55px;
 		padding-right: 55px;
