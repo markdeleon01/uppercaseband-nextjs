@@ -1,0 +1,21 @@
+.aboutHeader {
+    padding-bottom: 10px;
+}
+
+.memberItem {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+
+.bandPic {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.bandPic img {
+    width: '100%';
+	height: 'auto';
+    max-width: 450px;
+	max-height: 300px;
+}
