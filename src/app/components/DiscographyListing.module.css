@@ -1,0 +1,16 @@
+.releaseItem {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.releaseThumbnail {
+    width: '100%';
+	height: 'auto';
+    max-width: 300px;
+	max-height: 300px;
+	padding-bottom: 10px;
+}
+
+.releaseTitle {
+	font-weight: bold;
+}
