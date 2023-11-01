@@ -4,6 +4,12 @@
 [![CircleCI](https://dl.circleci.com/status-badge/img/gh/markdeleon01/uppercaseband-nextjs/tree/main.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/markdeleon01/uppercaseband-nextjs/tree/main)
 
 
+**Code unit test coverage:**
+| Statements                  | Branches                | Functions                 | Lines             |
+| --------------------------- | ----------------------- | ------------------------- | ----------------- |
+| ![Statements](https://img.shields.io/badge/statements-91.69%25-brightgreen.svg?style=flat) | ![Branches](https://img.shields.io/badge/branches-91.42%25-brightgreen.svg?style=flat) | ![Functions](https://img.shields.io/badge/functions-83.33%25-yellow.svg?style=flat) | ![Lines](https://img.shields.io/badge/lines-91.69%25-brightgreen.svg?style=flat) |
+
+
 As a matter of interest and passion for JavaScript and music in general, I created a NextJS web application for my band UPPERCASE.
 
 The live site can be found on:  
