@@ -15,7 +15,6 @@ test('renders DiscographyListing', () => {
 
 	render(<EventListing event={event} />)
 
-	// assert page components
 	expect(screen.getByTestId('event-item')).toBeDefined()
 	expect(screen.getByTestId('event-title')).toBeDefined()
 	expect(screen.getByTestId('event-date')).toBeDefined()

@@ -5,7 +5,7 @@ import NavBar from '../src/app/components/NavBar'
 test('renders NavBar', () => {
 	render(<NavBar />, { wrapper: MemoryRouter })
 
-	// assert navigation links
+    expect(screen.getByTestId('nav')).toBeInTheDocument()
 	expect(screen.getByTestId('home-link')).toBeInTheDocument()
     expect(screen.getByTestId('about-link')).toBeInTheDocument()
     expect(screen.getByTestId('discography-link')).toBeInTheDocument()
