@@ -42,6 +42,11 @@ jobs:
             npm run install:xvfb
 
       - run:
+          name: Run build
+          command: |
+            npm run build
+
+      - run:
           name: Run Cypress component tests
           command: |
             npm run cypress:component
@@ -49,7 +54,7 @@ jobs:
       - run:
           name: Run Cypress end-to-end tests
           command: |
-            npm run build && npm run cypress:ci
+            npm run cypress:ci
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
