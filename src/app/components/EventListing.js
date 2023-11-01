@@ -5,15 +5,24 @@ import formatDate from '../lib/formatDate'
 
 export default function EventListing({ event }) {
 	return (
-		<div className={styles.eventItem}>
-			<span className={styles.eventTitle}>{event.title}</span>
+		<div data-testid='event-item' className={styles.eventItem}>
+			<span data-testid='event-title' className={styles.eventTitle}>
+				{event.title}
+			</span>
 			<br />
-			<span className={styles.eventDate}>{formatDate(event.date)}</span>
+			<span data-testid='event-date' className={styles.eventDate}>
+				{formatDate(event.date)}
+			</span>
 			<br />
-			<span className={styles.eventLocation}>{event.location}</span>
+			<span data-testid='event-location' className={styles.eventLocation}>
+				{event.location}
+			</span>
 			<br />
-			<span className={styles.eventContent}>{ReactHtmlParser(event.content)}</span>
+			<span data-testid='event-content' className={styles.eventContent}>
+				{ReactHtmlParser(event.content)}
+			</span>
 			<a
+				data-testid='event-url'
 				className={styles.eventUrl}
 				href={event.externalUrl}
 				target='_blank'
