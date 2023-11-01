@@ -12,7 +12,7 @@
 
 As a matter of interest and passion for JavaScript and music in general, I created a NextJS web application for my band UPPERCASE.
 
-The live site can be found on:  
+The live site can be found on:  https://uppercaseband-nextjs.vercel.app/
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
