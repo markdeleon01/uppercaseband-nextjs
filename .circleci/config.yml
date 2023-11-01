@@ -46,6 +46,11 @@ jobs:
           command: |
             npm run cypress:component
 
+      - run:
+          name: Run Cypress end-to-end tests
+          command: |
+            npm run cypress:ci
+
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
 workflows:
