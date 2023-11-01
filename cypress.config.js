@@ -1,6 +1,7 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+  projectId: "sby3nv",
   env: {
 		codeCoverage: {
 			include: 'cypress/**/*.*'
