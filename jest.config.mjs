@@ -17,6 +17,9 @@ const config = {
   collectCoverageFrom: [
     '**/*.{js,jsx,ts,tsx}',
     '!**/*.d.ts',
+    '!**/__mocks__/**',
+    '!**/__tests__/**',
+    '!**/cypress/**',
     '!**/node_modules/**',
     '!<rootDir>/out/**',
     '!<rootDir>/.next/**',
