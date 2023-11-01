@@ -1,9 +1,11 @@
+import axios from 'axios'
+
 const getEvents = async function () {
-	const response = await fetch(
-		'https://my-json-server.typicode.com/markdeleon01/uppercaseband-nextjs/events'
-	)
-	const resData = await response.json()
-	return resData
+	const resp = await axios
+		.get(
+			'https://my-json-server.typicode.com/markdeleon01/uppercaseband-nextjs/events'
+		)
+	return resp.data
 }
 
 export const fetchEvents = getEvents

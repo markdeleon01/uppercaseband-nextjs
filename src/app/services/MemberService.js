@@ -1,9 +1,11 @@
-const getMembers = async function() {
-    const response = await fetch(
-        'https://my-json-server.typicode.com/markdeleon01/uppercaseband-nextjs/members'
-    )
-    const resData = await response.json()
-    return resData
+import axios from 'axios'
+
+const getMembers = async function () {
+	const resp = await axios
+        .get(
+            'https://my-json-server.typicode.com/markdeleon01/uppercaseband-nextjs/members'
+        )
+    return resp.data
 }
 
 export const fetchMembers = getMembers

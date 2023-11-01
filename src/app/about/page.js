@@ -1,13 +1,24 @@
+'use client'
+
 import styles from './page.module.css'
 
 import { fetchMembers } from '../services/MemberService'
 
-import { Suspense } from 'react'
+import { Suspense, useEffect, useState } from 'react'
 import Loading from '../loading'
 import Image from 'next/image'
 
-export default async function About() {
-	const members = await fetchMembers()
+export default function About() {
+	const [members, setMembers] = useState([])
+
+	useEffect(() => {
+		const getMembers = () => {
+			fetchMembers().then((data) => {
+				setMembers(data)
+			})
+		}
+		getMembers()
+	}, [])
 
 	return (
 		<div data-testid='about' className={styles.about}>
@@ -17,7 +28,7 @@ export default async function About() {
 			{members &&
 				members.map((member) => (
 					<p
-						data-testid='band-member'
+						data-testid='member-item'
 						className={styles.memberItem}
 						key={member.name}
 					>

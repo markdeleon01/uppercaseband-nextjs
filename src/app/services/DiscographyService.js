@@ -1,9 +1,11 @@
-const getDiscography = async function() {
-    const response = await fetch(
-        'https://my-json-server.typicode.com/markdeleon01/uppercaseband-nextjs/discography'
-    )
-    const resData = await response.json()
-    return resData
+import axios from 'axios'
+
+const getDiscography = async function () {
+	const resp = await axios
+        .get(
+            'https://my-json-server.typicode.com/markdeleon01/uppercaseband-nextjs/discography'
+        )
+    return resp.data
 }
 
 export const fetchDiscography = getDiscography

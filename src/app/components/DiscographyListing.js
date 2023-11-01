@@ -8,9 +8,10 @@ import formatDate from '../lib/formatDate'
 
 export default function DiscographyListing({ release }) {
 	return (
-		<p className={styles.releaseItem}>
+		<p data-testid='release-item' className={styles.releaseItem}>
 			<Suspense fallback={<Loading />}>
 				<Image
+                    data-testid='release-thumbnail'
 					alt={release.imageUrl}
 					className={styles.releaseThumbnail}
 					src={'/' + release.imageUrl}
@@ -24,13 +25,14 @@ export default function DiscographyListing({ release }) {
 				/>
 			</Suspense>
 			<br />
-			<span className={styles.releaseTitle}>{release.title}</span>
+			<span data-testid='release-title' className={styles.releaseTitle}>{release.title}</span>
 			<br />
-			<span className={styles.releaseDate}>
+			<span data-testid='release-date' className={styles.releaseDate}>
 				Released: {formatDate(release.releaseDate)}
 			</span>
 			<br />
 			<a
+                data-testid='release-url'
 				className={styles.releaseUrl}
 				href={release.spotifyUrl}
 				target='_blank'
