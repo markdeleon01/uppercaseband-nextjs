@@ -1,12 +1,12 @@
 describe('Test the home page', () => {
 	it('visits the app root url', () => {
-		cy.visit('http://localhost:3000/')
+		cy.visit('/')
 
 		cy.get('h1').contains('U P P E R C A S E')
 	})
 
 	it('has navigation links', () => {
-		cy.visit('http://localhost:3000/')
+		cy.visit('/')
 
 		cy.get('[data-testid="nav"]').should('exist')
 		cy.get('[data-testid="nav"]').should('have.length', 1)
@@ -21,7 +21,7 @@ describe('Test the home page', () => {
 	})
 
 	it('has page content', () => {
-		cy.visit('http://localhost:3000/')
+		cy.visit('/')
 
 		cy.get('[data-testid="home"]').should('exist')
 		cy.get('[data-testid="home"]').should('have.length', 1)

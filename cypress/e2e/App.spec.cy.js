@@ -1,6 +1,6 @@
 describe('Test the home page', () => {
   it('visits the app root url', () => {
-    cy.visit('http://localhost:3000/')
+    cy.visit('/')
 
     cy.get('title').contains('U P P E R C A S E')
     cy.get('[data-testid="main"]').should('exist')
