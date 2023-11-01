@@ -30,12 +30,21 @@ jobs:
 
       - run:
           name: Run unit tests
-          command: npm run test:ci
+          command: npm run test:unit
 
       - run:
           name: Run tests coverage
           command: npm run coverage
 
+      - run:
+          name: Install xvfb
+          command: |
+            npm run install:xvfb
+
+      - run:
+          name: Run Cypress component tests
+          command: |
+            npm run cypress:component
 
 # Orchestrate jobs using workflows
 # See: https://circleci.com/docs/configuration-reference/#workflows
