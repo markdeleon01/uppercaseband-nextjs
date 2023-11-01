@@ -12,7 +12,7 @@
 		"make-badges": "istanbul-badges-readme",
 		"make-badges:ci": "npm run make-badges -- --ci",
 		"install:xvfb": "sudo apt-get update && sudo apt-get install libgtk2.0-0 && sudo apt-get install libgtk-3-0 && sudo apt-get install libgbm-dev && sudo apt-get install libnotify-dev && sudo apt-get install libgconf-2-4 && sudo apt-get install libnss3 && sudo apt-get install libxss1 && sudo apt-get install libasound2 && sudo apt-get install libxtst6 && sudo apt-get install xauth && sudo apt-get install xvfb",
-		"cypress:component": "npx cypress run --headless --component",
+		"cypress:component": "npx cypress run --headless --component --record --key 85225036-0d5e-48c8-aa85-81afdcd9c45e",
 		"cypress:e2e": "npx cypress run --headless --e2e --record --key 85225036-0d5e-48c8-aa85-81afdcd9c45e",
 		"cypress:ci": "start-server-and-test start-server http://localhost:3000 cypress:e2e",
 		"start-server": "npm start",
