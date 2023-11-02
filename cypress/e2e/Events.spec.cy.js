@@ -27,6 +27,8 @@ describe('Test the events page', () => {
 		cy.get('[data-testid="events-link"]').should('have.length', 1)
 		cy.get('[data-testid="events-link"]').click()
 
+		cy.url().should('include', '/events')
+
 		cy.title().should('eq', 'U P P E R C A S E')
 		cy.get('[data-testid="events"]').should('exist')
 		cy.get('[data-testid="events"]').should('have.length', 1)

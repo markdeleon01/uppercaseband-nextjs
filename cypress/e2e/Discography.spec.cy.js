@@ -27,6 +27,8 @@ describe('Test the discography page', () => {
 		cy.get('[data-testid="discography-link"]').should('have.length', 1)
 		cy.get('[data-testid="discography-link"]').click()
 
+		cy.url().should('include', '/discography')
+
 		cy.title().should('eq', 'U P P E R C A S E')
 		cy.get('[data-testid="discography"]').should('exist')
 		cy.get('[data-testid="discography"]').should('have.length', 1)
