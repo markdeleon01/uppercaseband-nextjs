@@ -21,6 +21,8 @@ describe('Test the about page', () => {
 		cy.get('[data-testid="about-link"]').should('have.length', 1)
 		cy.get('[data-testid="about-link"]').click()
 
+        cy.url().should('include', '/about')
+
 		cy.title().should('eq', 'U P P E R C A S E')
 		cy.get('[data-testid="about"]').should('exist')
 		cy.get('[data-testid="about"]').should('have.length', 1)
