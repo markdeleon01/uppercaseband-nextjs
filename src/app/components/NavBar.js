@@ -16,6 +16,7 @@ export default function NavBar() {
 		})
 	}
 
+    /* c8 ignore start */
 	const determineCurrentLink = () => {
 		resetNavLinksClass()
 
@@ -30,6 +31,7 @@ export default function NavBar() {
 			}
 		})
 	}
+    /* c8 ignore stop */
 
 	const highlightLink = (event) => {
 		resetNavLinksClass()

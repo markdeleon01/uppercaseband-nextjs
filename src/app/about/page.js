@@ -3,6 +3,7 @@
 import styles from './page.module.css'
 
 import { fetchMembers } from '../services/MemberService'
+import MemberListing from '../components/MemberListing'
 
 import { Suspense, useEffect, useState } from 'react'
 import Loading from '../loading'
@@ -27,15 +28,7 @@ export default function About() {
 			</h2>
 			{members &&
 				members.map((member) => (
-					<p
-						data-testid='member-item'
-						className={styles.memberItem}
-						key={member.name}
-					>
-						<span>
-							{member.name} - {member.role}
-						</span>
-					</p>
+					<MemberListing key={member.name} member={member} />
 				))}
 			<p data-testid='band-pic' className={styles.bandPic}>
 				<Suspense fallback={<Loading />}>
