@@ -21,7 +21,7 @@ export default function GlobalError({ error, reset }) {
 					<div data-testid='page-error' className='pageError'>
 						<h2>Something went wrong!</h2>
 						<p>{error.message}</p>
-						<button onClick={() => reset()}>Try again</button>
+						<button data-testid='try-again' onClick={() => reset()}>Try again</button>
 					</div>
 				</main>
 			</body>
