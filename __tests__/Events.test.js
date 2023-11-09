@@ -75,6 +75,9 @@ test('renders Events', () => {
 
 	render(<Events />)
 
-	expect(screen.getByTestId('events')).toBeDefined()
-    expect(screen.getByTestId('events-header')).toBeDefined()
+	setTimeout( () => {
+		expect(screen.getByTestId('events')).toBeDefined()
+		expect(screen.getByTestId('events-header')).toBeDefined()
+		expect(screen.getAllByTestId('event-item').length).toBeEqual(6)
+	}, 2000)
 })

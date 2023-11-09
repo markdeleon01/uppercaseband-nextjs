@@ -27,6 +27,7 @@ const config = {
     '!<rootDir>/coverage/**',
   ],
   coverageReporters: [
+      'html',
       'json-summary'
   ],
   moduleNameMapper: {

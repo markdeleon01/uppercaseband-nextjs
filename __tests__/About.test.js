@@ -32,8 +32,11 @@ test('renders About', () => {
 
 	render(<About />)
 
-	expect(screen.getByTestId('about')).toBeDefined()
-	expect(screen.getByTestId('about-header')).toBeDefined()
-	expect(screen.getByTestId('band-pic')).toBeDefined()
-	expect(screen.getByTestId('biography')).toBeDefined()
+	setTimeout( () => {
+		expect(screen.getByTestId('about')).toBeDefined()
+		expect(screen.getByTestId('about-header')).toBeDefined()
+		expect(screen.getByTestId('band-pic')).toBeDefined()
+		expect(screen.getByTestId('biography')).toBeDefined()
+		expect(screen.getAllByTestId('member-item').length).toBeEqual(4)
+	}, 2000)
 })

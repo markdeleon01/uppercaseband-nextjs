@@ -60,7 +60,10 @@ test('renders Discography', () => {
 
 	render(<Discography />)
 
-	expect(screen.getByTestId('discography')).toBeDefined()
-    expect(screen.getByTestId('discography-header')).toBeDefined()
-    expect(screen.getByTestId('discography-headline')).toBeDefined()
+	setTimeout( () => {
+		expect(screen.getByTestId('discography')).toBeDefined()
+		expect(screen.getByTestId('discography-header')).toBeDefined()
+		expect(screen.getByTestId('discography-headline')).toBeDefined()
+		expect(screen.getAllByTestId('release-item').length).toBeEqual(6)
+	}, 2000)
 })
