@@ -138,6 +138,10 @@ a:hover {
 	padding-right: 140px;
 }
 
+.pageError {
+	border-color: red;
+}
+
 h2 {
 	padding-top: 20px;
 }
